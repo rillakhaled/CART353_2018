@@ -15,6 +15,7 @@ class GridSquare {
 
     this.white = white;
 
+    // establish a random amount of food to start with
     this.food = random(500, 1000);
 
     if (white) {
@@ -24,16 +25,14 @@ class GridSquare {
     }
   }
 
-  void draw() {
+  void render() {
 
     // if it is a black square
     if (!this.white) {
 
       // reflect the amount of food
-      col = (int)map(this.food, 0, 1000, 0, 220);
+      col = (int)map(this.food, 0, 1000, 255, 0);
 
-      // we need to kind of invert this number, since black is 0 which in this case means healthy
-      col = 220 - col;
     }
 
     fill(col, 10);
@@ -48,7 +47,7 @@ class GridSquare {
 
   void feed() {
     if (!this.white && this.food < 1000) {
-      this.food += 5;
+      this.food += 10;
       
     }
   }
