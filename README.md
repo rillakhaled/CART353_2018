@@ -5,4 +5,4 @@ You can find the course website here: https://github.com/rillakhaled/CART353_201
 
 You can find code snippets and examples above.
 
-If you need anything that can't be answered by the wiki, email Rilla: rilla.khaled@concordia.ca or visit during office hours: Thursday 2pm - 4pm, EV 6.743
+If you need anything that can't be answered by the wiki, email Rilla: rilla.khaled@concordia.ca or visit during office hours: Friday 2pm - 4pm, EV 6.743
