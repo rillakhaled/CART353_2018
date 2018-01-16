@@ -2,7 +2,6 @@
 // Daniel Shiffman
 // http://www.learningprocessing.com
 
-// Example 15-2: Image "sprite"
 
 Head h;
 
