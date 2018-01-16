@@ -36,7 +36,7 @@ void draw() {
       float adjustBrightnessG = map(mouseY, 0, height, 1, 5);
       
       // adjust B based on dist from mouse (x and y combined)
-      float adjustBrightnessB = map(distance, 0, 50, 8, 0);
+      float adjustBrightnessB = map(distance, 0, sqrt(200*200+200*200), 8, 0);
             
       r *= adjustBrightnessR;
       g *= adjustBrightnessG;
