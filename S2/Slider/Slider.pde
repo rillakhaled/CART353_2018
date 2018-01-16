@@ -16,23 +16,22 @@ void setup() {
 
 void draw() {
   
-  // x loc serves as our "slider"
-  int x = mouseX;
-
+  // mouseX is our "slider"
+  
   source.loadPixels();
   loadPixels();
 
-  for (int i = 0; i < source.width; i++) {
-    for (int j = 0; j < source.height; j++) {
+  for (int x = 0; x < source.width; x++) {
+    for (int y = 0; y < source.height; y++) {
 
-      int loc = i + j * source.width;
+      int loc = x + y * source.width;
       color c = source.pixels[loc];
       
       // newc will hold the value of our new color (if we need it)
       int newc = 0;
 
       // if we are looking at portions of the screen to the left of our slider
-      if (i < x) {
+      if (x < mouseX) {
         
         // convert c to be in black and white, using color type's brightness method
         newc = (int)brightness(c);
@@ -56,5 +55,5 @@ void draw() {
 
   updatePixels();
   stroke(3);
-  line(x, 0, x, height);
+  line(mouseX, 0, mouseX, height);
 }
