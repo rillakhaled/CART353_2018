@@ -17,7 +17,7 @@ void setup() {
 void draw() {
   
   // mouseX is our "slider"
-  
+  image(source, 0, 0);
   source.loadPixels();
   loadPixels();
 
@@ -46,14 +46,17 @@ void draw() {
         //newc = (int)(r1+g1+b1)/3;
         //newc = constrain(newc, 0, 255);
         
-        pixels[loc] = color(newc);
+        //pixels[loc] = color(newc);
+        source.pixels[loc] = color(newc);
       } else {
-        pixels[loc] = c;
+        //pixels[loc] = c;
+        source.pixels[loc] = c;
       }
     }
   }
 
-  updatePixels();
+  //updatePixels();
+  source.updatePixels();
   stroke(3);
   line(mouseX, 0, mouseX, height);
 }
