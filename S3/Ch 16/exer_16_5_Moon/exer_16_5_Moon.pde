@@ -49,7 +49,7 @@ void draw() {
 
   for (int x = 0; x < width; x++) {
     for (int y = 0; y < height; y++) {
-      int loc = x + y*height;
+      int loc = x + y*width;
       
       // color information for the video pixel were currently looking at
       color c1 = video.pixels[loc];

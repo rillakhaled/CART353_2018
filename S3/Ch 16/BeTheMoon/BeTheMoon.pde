@@ -19,6 +19,8 @@ int size;
 void setup() {
 
   size(640, 480);
+  
+  printArray(Capture.list());
 
   background = loadImage("backgroundOnlyWithHole.png");
 

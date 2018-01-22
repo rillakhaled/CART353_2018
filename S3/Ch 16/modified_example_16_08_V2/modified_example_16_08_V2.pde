@@ -63,7 +63,9 @@ void draw() {
       float z = map(brightness(c), 0, 255, -100, 100);
 
       translate(x + videoScale/2, y + videoScale/2, z); 
-      fill(255);
+
+      // set fill and stroke
+      fill(c);
       noStroke();
 
       // use rectMode CENTER & rect to draw 
@@ -72,7 +74,6 @@ void draw() {
 
       // popMatrix() to reset our drawing origin to (0, 0)
       popMatrix();
-
     }
   }
 }

@@ -51,7 +51,7 @@ void draw() {
   midx = constrain(midx, 0, width-1);
   midy = constrain(midy, 0, height-1);
   
-  color c = color(100);
+  color c = 100;
   stroke(c);
 
   line(x, y, x+crossSize, y+crossSize);
