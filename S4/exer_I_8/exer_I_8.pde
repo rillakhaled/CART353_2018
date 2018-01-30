@@ -13,8 +13,9 @@ void draw() {
   loadPixels();
   float xoff = 0.0;
   
-  // 6 octaves, with each octave having 40% impact of the one immediately below it
-  noiseDetail(6, 0.4);
+  // 6 octaves, with each octave having 20% impact of the one immediately below it
+  // NB: default is (4, 0.5);
+  noiseDetail(6, 0.2);
 
   for (int x = 0; x < width; x++) {
     
