@@ -1,7 +1,3 @@
-
-// Rilla's homage to "A Trip to the Moon"
-// that uses color detection to control where the moon is
-
 import processing.video.*;
 
 PImage selection;
@@ -18,8 +14,6 @@ color c2 = color(0, 0, 255);
 void setup() {
 
   size(640, 480);
-
-  // note: Processing gets freaked out with non standard camera dimensions
   video = new Capture(this, width, height);
   video.start();
 }

@@ -1,0 +1,7 @@
+/* Rilla's solution to exercise I.2 in Nature of Code 
+
+Exercise I.2
+What is the probability of drawing two aces in a row from a deck of fifty-two cards? */
+
+
+4/52 * 4/52 = 16/2704

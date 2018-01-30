@@ -21,7 +21,6 @@ PImage moonLanding;
 
 
 // How different must a pixel be to be a foreground pixel
-
 // how do low values make the sketch act?
 // how about high values?
 float threshold = 100;
@@ -42,7 +41,7 @@ void captureEvent(Capture video) {
 
 void draw() {
   
-  threshold = map(mouseX, 0, 800, 0, 200);
+  threshold = map(mouseX, 0, 640, 0, 200);
   
   // We are looking at the video's pixels, the memorized backgroundImage's pixels, the pixels of our "green screen" img, as well as accessing the display pixels. 
   

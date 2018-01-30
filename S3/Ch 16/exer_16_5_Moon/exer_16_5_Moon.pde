@@ -18,7 +18,6 @@ void setup() {
 
   threshold = 500.0;
 
-  // note: Processing gets freaked out with non standard camera dimensions
   video = new Capture(this, width, height);
   video.start();
 }
