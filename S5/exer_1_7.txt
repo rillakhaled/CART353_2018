@@ -1,0 +1,14 @@
+/* Rilla’s solution to exercise 1.7
+
+Exercise 1.7
+Translate the following pseudocode to code using static or non-static functions where appropriate.
+
+The PVector v equals (1,5).
+The PVector u equals v multiplied by 2.
+The PVector w equals v minus u.
+Divide the PVector w by 3. */
+
+PVector v = new PVector(1,5);
+PVector u = PVector.mult(v, 2);
+PVector w = PVector.sub(v, u);
+w.div(3);

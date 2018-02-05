@@ -1,0 +1,11 @@
+/* Rilla’s solution to exercise 1.4
+
+Exercise 1.4
+Write the limit() function for the PVector class.*/
+
+void limit(float max) {
+   if (mag() > max) {
+      normalise();
+      mult(max);
+   }
+}
