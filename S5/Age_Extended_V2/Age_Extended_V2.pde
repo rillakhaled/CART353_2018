@@ -5,9 +5,9 @@ void setup() {
 }
 
 void draw() {
-  println("age before changeAge: "+ah.age);
+  println("age in draw() before changeAge: "+ah.age);
   changeAge(ah);
-  println("age after changeAge: "+ah.age);
+  println("age in draw() after changeAge: "+ah.age);
 }
 
 void changeAge(AgeHolder a) {
