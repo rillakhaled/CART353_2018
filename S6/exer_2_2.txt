@@ -1,0 +1,10 @@
+/* Rilla’s solution to exercise 2.2 of Shiffman’s Nature of Code
+
+Exercise 2.2
+Rewrite the applyForce() method using the static method div() instead of get(). */
+
+
+void applyForce(PVector force) {
+  PVector f = PVector.div(force,mass);
+  acceleration.add(f);
+}
