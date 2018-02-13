@@ -16,12 +16,16 @@ class Balloon {
     acceleration.add(f);
   }
 
+  /* note that update() applies our accumulated acceleration
+   and then it clears acceleration by multiplying by 0 */
   void update() {
     velocity.add(acceleration);
     position.add(velocity);
     acceleration.mult(0);
   }
 
+  /* checkEdges ONLY does bounce stuff for walls, not for ceiling
+   the forces take care of helium + ceiling bounce */
   void checkEdges() {
 
     if (position.x + balloon.width > width) {
@@ -32,7 +36,7 @@ class Balloon {
       velocity.x *= -1;
     }
   }
-  
+
   void display() {
     background(255);
     image(balloon, position.x, position.y);

@@ -40,7 +40,7 @@ void draw() {
   }
 
   b.update();
-  b.checkEdges();
+  b.checkEdges(); 
   b.display();
   xoff += 0.01;
   yoff += 0.01;
