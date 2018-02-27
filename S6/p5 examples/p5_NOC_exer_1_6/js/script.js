@@ -14,6 +14,7 @@ function setup() {
   //createCanvas(640, 360);
   createCanvas(windowWidth,windowHeight);
   this.mover = new Mover();
+  
 }
 
 /* we also have a draw method */

@@ -1,0 +1,33 @@
+/* Rilla’s solution to exercise 3.15 of Shiffman’s Nature of Code
+
+Exercise 3.15
+Before running to see the example online, take a look at this constrain 
+function and see if you can fill in the blanks. */
+
+
+void constrainLength(Bob b, float minlen, float maxlen) {
+
+  // Vector pointing from Bob to Anchor
+  PVector dir = PVector.sub(anchor, b.position);
+  float d = dir.mag();
+ 
+  // Is it too short?
+  if (d < minlen) {
+    dir.normalize();
+    dir.mult(minlen);
+
+    // Keep location within constraint.
+    b.position = PVector.add(anchor, dir);
+    b.velocity.mult(0);
+  } 
+
+  // Is it too long?
+  else if (d > maxlen) {
+    dir.normalize();
+    dir.mult(maxlen);
+
+    // Keep location within constraint.
+    b.position = PVector.add(anchor, dir);
+    b.velocity.mult(0);
+  }
+}

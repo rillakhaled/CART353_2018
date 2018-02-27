@@ -3,11 +3,13 @@ class Balloon {
   PVector acceleration;
   PVector velocity;
   PVector position;
+  PVector oldposition;
   PImage balloon;
 
   Balloon() {
     acceleration = new PVector(0, 0);
     velocity = new PVector(0, 0);
+    oldposition = new PVector(0,0);
     position = new PVector(width/2, height - 100);
     balloon = loadImage("balloon.png");
   }
@@ -20,6 +22,8 @@ class Balloon {
    and then it clears acceleration by multiplying by 0 */
   void update() {
     velocity.add(acceleration);
+    oldposition.x = position.x;
+    oldposition.y = position.y;
     position.add(velocity);
     acceleration.mult(0);
   }

@@ -21,6 +21,15 @@ void setup() {
 }
 
 void draw() {
+  
+    // if balloon has "floated" up to the top
+  if (b.position.y <= 0) {
+    // the ceiling should exert a downwards force: apply the ceiling 
+    println("position.x "+b.position.x+" pos y: "+b.position.y);
+    println("oldposition.x "+b.oldposition.x+" oldpos y: "+b.oldposition.y);
+    println("velocity.x "+b.velocity.x+" vel y: "+b.velocity.y);
+    b.applyForce(ceiling);
+  }
 
   // apply our helium vector to the balloon
   b.applyForce(helium);
@@ -32,12 +41,6 @@ void draw() {
 
   // apply wind
   b.applyForce(wind);
-
-  // if balloon has "floated" up to the top
-  if (b.position.y <= 0) {
-    // the ceiling should exert a downwards force: apply the ceiling force
-    b.applyForce(ceiling);
-  }
 
   b.update();
   b.checkEdges(); 
