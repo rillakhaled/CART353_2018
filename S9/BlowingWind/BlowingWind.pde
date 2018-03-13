@@ -23,20 +23,19 @@ void draw() {
 
   float incoming = 0;
 
-  // I'm averaging the abs value of both the left input and right input
-  // this will tell me about how much sound is coming in
+  // I'm summing the incoming sound - since my mic is unidirectional, left and right inputs are the same
   for (int i = 0; i < in.bufferSize() - 1; i++) {
     incoming += Math.abs(in.left.get(i));
   }
 
   incoming /= in.bufferSize();
 
-  // if the left input is over a certain threshold
+  // if the incoming sound is over a certain threshold
   if (incoming >= 0.01) {
 
     // make a kind of wind vector with a rightwards force
-    PVector left = new PVector(incoming * 100, 0);
-    ps.applyForce(left);
+    PVector rightWind = new PVector(incoming * 30, 0);
+    ps.applyForce(rightWind);
   }
 
   for (int i = 0; i < 5; i++) {
