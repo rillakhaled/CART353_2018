@@ -41,7 +41,7 @@ class Spring {
     float stretch = d - len;
 
     // Calculate force according to Hooke's Law
-    // F = k * stretch
+    // F = - k * stretch
     force.normalize();
     force.mult(-1 * k * stretch);
     b1.applyForce(force);
@@ -58,6 +58,6 @@ class Spring {
   void displayLine() {
     strokeWeight(2);
     stroke(0);
-    //line(b1.position.x, b1.position.y, b2.position.x, b2.position.y);
+    line(b1.position.x, b1.position.y, b2.position.x, b2.position.y);
   }
 }

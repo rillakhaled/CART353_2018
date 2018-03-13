@@ -1,0 +1,97 @@
+[
+  {
+    "appearance": "heavy of belly",
+    "name": "Aesop",
+    "job": "sofa sales person",
+    "age": 53,
+    "friends": [
+      {"name": "Diocles"},
+      {"name": "Diocles"}
+    ]
+  },
+  {
+    "appearance": "ruddy of face",
+    "name": "Diocles",
+    "job": "robot dance choreographer",
+    "age": 73,
+    "friends": [{"name": "Alexis"}]
+  },
+  {
+    "appearance": "ruddy of face",
+    "name": "Agnes",
+    "job": "Elvis impersonator",
+    "age": 92,
+    "friends": []
+  },
+  {
+    "appearance": "pearly of teeth",
+    "name": "Aesop",
+    "job": "robot dance choreographer",
+    "age": 71,
+    "friends": [
+      {"name": "Diocles"},
+      {"name": "Bion"},
+      {"name": "Cleopatra"}
+    ]
+  },
+  {
+    "appearance": "flaccid of cheeks",
+    "name": "Elpis",
+    "job": "sofa sales person",
+    "age": 96,
+    "friends": [
+      {"name": "Diocles"},
+      {"name": "Cleopatra"},
+      {"name": "Alexis"}
+    ]
+  },
+  {
+    "appearance": "ruddy of face",
+    "name": "Chloe",
+    "job": "baker",
+    "age": 56,
+    "friends": [
+      {"name": "Bion"},
+      {"name": "Agnes"}
+    ]
+  },
+  {
+    "appearance": "perpetually surprised",
+    "name": "Agnes",
+    "job": "sofa sales person",
+    "age": 35,
+    "friends": [
+      {"name": "Cleopatra"},
+      {"name": "Chloe"},
+      {"name": "Aesop"}
+    ]
+  },
+  {
+    "appearance": "heavy of belly",
+    "name": "Alexis",
+    "job": "Elvis impersonator",
+    "age": 66,
+    "friends": [
+      {"name": "Aesop"},
+      {"name": "Elpis"},
+      {"name": "Bion"}
+    ]
+  },
+  {
+    "appearance": "flaccid of cheeks",
+    "name": "Chloe",
+    "job": "acrobat",
+    "age": 34,
+    "friends": [
+      {"name": "Bion"},
+      {"name": "Elpis"}
+    ]
+  },
+  {
+    "appearance": "perky of ear",
+    "name": "Chloe",
+    "job": "robot dance choreographer",
+    "age": 48,
+    "friends": []
+  }
+]

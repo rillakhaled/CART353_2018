@@ -9,7 +9,6 @@ class Bob {
   PVector velocity;
   PVector acceleration;
   float mass = 24;
-  color c;
   
   // Arbitrary damping to simulate friction / drag 
   float damping = 0.98;
@@ -24,12 +23,6 @@ class Bob {
     velocity = new PVector();
     acceleration = new PVector();
     dragOffset = new PVector();
-    
-    int r = int(random(255));
-    int g = int(random(255));
-    int b = int(random(255));
-    
-    c = color(r, g, b);
   } 
 
   // Standard Euler integration
@@ -50,8 +43,9 @@ class Bob {
 
   // Draw the bob
   void display() { 
-    noStroke();
-    fill(c, 100);
+    stroke(0);
+    strokeWeight(2);
+    fill(175);
     if (dragging) {
       fill(50);
     }

@@ -11,23 +11,21 @@ Spring[] springs;
 
 void setup() {
   size(640, 360);
-  background(255);
-  bobs = new Bob[4];
+
+  bobs = new Bob[3];
   springs = new Spring[3];
 
   bobs[0] = new Bob(width/2, 100);
   bobs[1] = new Bob(100, 200);
   bobs[2] = new Bob(width-100, 200);
-  bobs[3] = new Bob(width, 300);
 
   springs[0] = new Spring(bobs[0], bobs[1], 200);
   springs[1] = new Spring(bobs[1], bobs[2], 100);
-  springs[2] = new Spring(bobs[2], bobs[3], 220);
-  //springs[3] = new Spring(bobs[3], bobs[0], 150);
+  springs[2] = new Spring(bobs[2], bobs[0], 220);
 }
 
 void draw() {
-  //background(255); 
+  background(255); 
 
   // Calculate the force the spring has on both of the bobs it is conmected to
   for (Spring s : springs) {
@@ -52,6 +50,8 @@ void draw() {
     b.display();
   }
 
+  fill(0);
+  text("click on bob to drag", 10, height-5);
 }
 
 
