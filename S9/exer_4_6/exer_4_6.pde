@@ -60,6 +60,4 @@ void draw() {
       ps.run();
     }
   }
-
-  println(systems.size());
 }

@@ -1,0 +1,28 @@
+ 
+/* Rilla’s solution to exercise 9.2 of Daniel Shiffman’s Nature of Code
+
+Exercise 9.2
+One of the other methods we used to generate a custom distribution of random numbers is called the Monte Carlo method. This technique involved picking two random numbers, with the second number acting as a qualifying number and determining if the first random number should be kept or thrown away. Rewrite the mating pool algorithm to use the Monte Carlo method instead. */
+
+
+
+  ArrayList<DNA> matingPool = new ArrayList<DNA>();
+  for (int i = 0; i < population.length; i++) {
+
+    // the first random number can just be our fitness level
+    float r1 = population[i].fitness;
+
+    float r2 = random(1);
+
+    // the higher the fitness (i.e. r1), the more likely that the following condition is true
+    if(r2 < r1) {
+
+      int n = int(population[i].fitness * 100);
+
+      for (int j = 0; j < n; j++) {
+        // Add each member of the population to the mating pool N times.
+      	matingPool.add(population[i]);
+      }
+    }
+  }
+

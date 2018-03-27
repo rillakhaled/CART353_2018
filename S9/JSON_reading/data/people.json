@@ -1,0 +1,87 @@
+[
+  {
+    "appearance": "an abundant of limbs",
+    "name": "Agnes",
+    "job": "acrobat",
+    "age": 86,
+    "friends": [
+      {"name": "Aesop"},
+      {"name": "Diocles"},
+      {"name": "Chloe"}
+    ]
+  },
+  {
+    "appearance": "perpetually surprised",
+    "name": "Alexis",
+    "job": "Elvis impersonator",
+    "age": 69,
+    "friends": []
+  },
+  {
+    "appearance": "perky of ear",
+    "name": "Agnes",
+    "job": "robot dance choreographer",
+    "age": 85,
+    "friends": [
+      {"name": "Bion"},
+      {"name": "Chloe"}
+    ]
+  },
+  {
+    "appearance": "pearly of teeth",
+    "name": "Bion",
+    "job": "acrobat",
+    "age": 22,
+    "friends": []
+  },
+  {
+    "appearance": "limp of wrists",
+    "name": "Diocles",
+    "job": "baker",
+    "age": 60,
+    "friends": [
+      {"name": "Agnes"},
+      {"name": "Alexis"},
+      {"name": "Agnes"}
+    ]
+  },
+  {
+    "appearance": "heavy of belly",
+    "name": "Elpis",
+    "job": "sofa sales person",
+    "age": 63,
+    "friends": []
+  },
+  {
+    "appearance": "flaccid of cheeks",
+    "name": "Cleopatra",
+    "job": "baker",
+    "age": 35,
+    "friends": [{"name": "Diocles"}]
+  },
+  {
+    "appearance": "an abundant of limbs",
+    "name": "Diocles",
+    "job": "Elvis impersonator",
+    "age": 52,
+    "friends": [
+      {"name": "Chloe"},
+      {"name": "Elpis"},
+      {"name": "Aesop"}
+    ]
+  },
+  {
+    "appearance": "an abundant of limbs",
+    "name": "Agnes",
+    "job": "acrobat",
+    "age": 81,
+    "friends": []
+  },
+  {
+    "appearance": "perky of ear",
+    "name": "Aesop",
+    "job": "acrobat",
+    "age": 20,
+    "friends": [{"name": "Chloe"}]
+  }
+]

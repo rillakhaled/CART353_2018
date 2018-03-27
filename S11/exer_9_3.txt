@@ -1,0 +1,44 @@
+/* Rilla’s solution to exercise 9.3 of Daniel Shiffman’s Nature of Code
+
+Exercise 9.3
+In some cases, the wheel of fortune algorithm will have an extraordinarily high preference for some elements over others. Take the following probabilities:
+
+A: 98%
+B: 1%
+C: 1%
+
+This is sometimes undesirable given how it will decrease the amount of variety in this system. A solution to this problem is to replace the calculated fitness scores with the ordinals of scoring (meaning their rank).
+
+A: 50% (3/6)
+B: 33% (2/6)
+C: 17% (1/6)
+
+Rewrite the mating pool algorithm to use this method instead.*/
+
+ArrayList<DNA> matingPool = new ArrayList<DNA>();
+
+// first we want to turn our fitness values into rankings
+// to do this we need to reorder our population
+
+DNA[] rankedPop = new DNA[population.length];
+
+for(int i = 0; i < population.length; i++) {
+  currentBest = i;
+  for(int j = i+1; j < population.length; j++) {
+    if(population[j].fitness > population[currentBest].fitness) {
+      currentBest = j;
+    }
+  }
+  rankedPop[i] = population[currentBest];
+}
+
+// rankedPop now holds the population ordered in descending fitness
+// fill up an array list according to rankedPop and population size
+
+for(int i = 0; i < rankedPop.length; i++) {
+  // how many times we add it is based on ranking
+  int numInstances = rankedPop.length - i;
+  for(int j = 0; j < numInstances; j++) {
+    matingPool.add(rankedPopulation[i]);
+  }
+}

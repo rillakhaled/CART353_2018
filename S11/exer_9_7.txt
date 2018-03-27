@@ -1,0 +1,17 @@
+/* Rilla’s solution to exercise 9.7 of Daniel Shiffman’s Nature of Code
+
+Exercise 9.7
+Rewrite the fitness function to increase exponentially according to the number of correct characters. Note that you will also have to normalize the fitness values to a range between 0 and 1 so they can be added to the mating pool a reasonable number of times. */
+
+
+void fitness (String target) {
+   int numCorrect = 0;
+   for (int i = 0; i < genes.length; i++) {
+      if (genes[i] == target.charAt(i)) {
+        numCorrect ++;
+      }
+   }
+   fitness = numCorrect*numCorrect;
+   fitness = map(fitness, 0, genes.length*genes.length, 0, 1);
+   return fitness;
+ }

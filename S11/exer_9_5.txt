@@ -1,0 +1,28 @@
+/* Rilla’s solution to exercise 9.5 of Daniel Shiffman’s Nature of Code
+
+Exercise 9.5
+Rewrite the crossover function to use the “coin flipping” method instead, in which each gene has a 50% chance of coming from parent A and a 50% chance of coming from parent B. */
+
+
+DNA crossover(DNA partner) {
+ 
+  DNA child = new DNA();
+
+  // for each potential gene slot
+  for(int i = 0; i < genes.length; i++) {
+
+    // coin flip random number
+    float randNum = random(1);
+
+    // if it’s less than 0.5, copy from our genes
+    if(randNum < 0.5) {
+      child.genes[i] = genes[i];
+    }
+    // if it’s >= 0.5, copy from partner’s genes
+    else {
+      child.genes[i] = partner.genes[i];
+    }
+  }
+
+  return child;
+}

@@ -1,6 +1,4 @@
-// The Nature of Code
-// Daniel Shiffman
-// http://natureofcode.com
+/* Rilla's solution for exercise 4.8 in Daniel Shiffman's The Nature of Code */
 
 ParticleSystem ps;
 

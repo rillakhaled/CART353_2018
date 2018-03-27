@@ -6,7 +6,7 @@ void setup() {
   jsonPeople = new JSONArray();
 
   // load our file contents into it
-  jsonPeople = loadJSONArray("data/MondayPeople.json");
+  jsonPeople = loadJSONArray("data/people.json");
 
   // now let's break our JSONArray down into individual chunks
   for (int i = 0; i < jsonPeople.size(); i++) {

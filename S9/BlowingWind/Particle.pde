@@ -8,7 +8,7 @@ class Particle {
   PVector acceleration;
   float lifespan;
   
-  float mass = 1; // 
+  float mass = 1;
 
   Particle(PVector l) {
     acceleration = new PVector(0,0);
@@ -45,7 +45,6 @@ class Particle {
     
     stroke(100, lifespan);
     strokeWeight(1);
-    //fill(127, lifespan);
     
     line(0, 0, 7, 0);
     popMatrix();

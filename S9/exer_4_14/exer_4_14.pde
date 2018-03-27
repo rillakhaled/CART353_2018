@@ -21,16 +21,16 @@ void setup() {
 void draw() {
 
   // Additive blending. Doesn't work on white, works best on dark colours.
-  // blendMode(ADD);
-  // background(0);
+  //blendMode(ADD);
+  //background(255);
 
   // Subtractive blending. Doesn't work on black, works best on light colours
-  // blendMode(SUBTRACT);
-  // background(255);
+  //blendMode(SUBTRACT);
+  //background(255);
   
   // Lightest mode blending. Turns our circles into confetti like squares - can't handle feathering?  
-  // blendMode(LIGHTEST);
-  // background(0);
+  blendMode(LIGHTEST);
+  background(0);
 
   // Darkest mode blending. Like lightest, but in inverse - only visible on light colours.
   // blendMode(DARKEST);
@@ -45,8 +45,8 @@ void draw() {
   // background(255);
   
   // Multiplation mode blending. Similar to exclusion.
-  blendMode(MULTIPLY);
-  background(255);
+  // blendMode(MULTIPLY);
+  // background(255);
 
   ps.run();
   for (int i = 0; i < 10; i++) {

@@ -133,7 +133,7 @@ class Attractor {
 
   // The methods below are for mouse interaction
 
-  // This checks to see if we clicked on the pendulum ball
+  // This checks to see if we clicked on the bulb 
   void clicked(int mx, int my) {
 
     bulbIsOn = !bulbIsOn;
@@ -153,7 +153,7 @@ class Attractor {
     }
   }
 
-  // This tells us we are not longer clicking on the ball
+  // This tells us we are not longer clicking on the bulb
   void stopDragging() {
     aVelocity = 0; // No velocity once you let go
     dragging = false;

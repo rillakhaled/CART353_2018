@@ -1,0 +1,39 @@
+/* Rilla’s solution to exercise 9.4 of Daniel Shiffman’s Nature of Code
+
+Exercise 9.4
+
+Add code to the above to guarantee that you have picked two unique “parents.” */
+
+
+int a = int(random(matingPool.size()));
+int b = int(random(matingPool.size()));
+
+DNA parentA = matingPool.get(a);
+
+boolean match = true;
+
+// we need to run through this loop at least once
+while(match) {	
+
+  // get a parentB
+  DNA parentB = matingPool.get(b);
+
+  // check each of parentB’s chars against parentA
+  for(int i = 0; i < parentA.genes.length; i++) {
+
+    // if either parentB doesn’t have a char here OR there is a mismatch of characters
+    // we know we have 2 unique parents, we can declare match to be false 
+    // and break out of our loops
+
+    if(parentB.genes[i] == null;
+      match = false;
+      break;
+    }
+    else if(parentB.genes[i] != parentA.genes[i]) {
+      match = false;
+      break;
+    }
+  }
+}
+
+// if we get out to here, it means match is false and we have a distinct parentA and parentB
