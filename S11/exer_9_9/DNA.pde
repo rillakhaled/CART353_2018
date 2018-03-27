@@ -11,8 +11,8 @@ class DNA {
   // The genetic sequence
   PVector[] genes;
 
-  // The maximum strength of the forces - let's go with 1
-  float maxforce = 1;
+  // The maximum strength of the forces - let's go with 0.2
+  float maxforce = 0.2;
 
   // Constructor (makes a DNA of random PVectors)
   DNA() {

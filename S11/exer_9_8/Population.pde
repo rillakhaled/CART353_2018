@@ -19,10 +19,11 @@ class Population {
     population = new Rocket[num];
     matingPool = new ArrayList<Rocket>();
     generations = 0;
+    
     //make a new set of creatures
     for (int i = 0; i < population.length; i++) {
       PVector position = new PVector(width/2,height+20);
-      population[i] = new Rocket(position, new DNA(),population.length);
+      population[i] = new Rocket(position, new DNA());
     }
   }
 
@@ -35,7 +36,7 @@ class Population {
     }
   }
 
-  // Did anything finish?
+  // Did anyone finish from this population?
   boolean targetReached() {
     for (int i = 0; i < population.length; i++) {
       if (population[i].hitTarget) return true;
@@ -90,7 +91,7 @@ class Population {
       child.mutate(mutationRate);
       // Fill the new population with the new child
       PVector position = new PVector(width/2,height+20);
-      population[i] = new Rocket(position, child,population.length);
+      population[i] = new Rocket(position, child);
     }
     generations++;
   }

@@ -30,10 +30,10 @@ class Rocket {
   int finishTime;              // What was my finish time?
 
   //constructor
-  Rocket(PVector l, DNA dna_, int totalRockets) {
+  Rocket(PVector l, DNA dna_) {
     acceleration = new PVector();
     velocity = new PVector();
-    position = l.get();
+    position = l.get(); // initial position is centred and below the screen
     r = 4;
     dna = dna_;
     finishTime = 0;          // We're going to count how long it takes to reach target
